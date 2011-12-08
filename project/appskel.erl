@@ -38,7 +38,7 @@ config(Key) ->
 
 -spec start(normal, _) -> ignore | {error, _} | {ok, pid()}.
 %% @hidden
-start(normal, _Args) -> fabric_sup:start_link().
+start(normal, _Args) -> {{projectid}}_sup:start_link().
 
 -spec stop(_) -> ok.
 %% @hidden
