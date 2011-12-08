@@ -1,4 +1,4 @@
-{variables, [{appid, "myproj"}]}.
+{variables, [{appid, "appskel"}]}.
 
 {template, "project/Makefile",          "{{projectid}}/Makefile"}.
 {template, "project/gitignore",         "{{projectid}}/.gitignore"}.
