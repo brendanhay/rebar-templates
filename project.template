@@ -1,0 +1,22 @@
+{variables, [{appid, "myproj"}]}.
+
+{template, "project/Makefile",          "{{projectid}}/Makefile"}.
+{template, "project/gitignore",         "{{projectid}}/.gitignore"}.
+{template, "project/rebar.config",      "{{projectid}}/rebar.config"}.
+
+{template, "project/appskel.hrl",        "{{projectid}}/apps/{{projectid}}/include/{{projectid}}.hrl"}.
+{template, "project/appskel.app.src",    "{{projectid}}/apps/{{projectid}}/src/{{projectid}}.app.src"}.
+{template, "project/appskel.erl",        "{{projectid}}/apps/{{projectid}}/src/{{projectid}}.erl"}.
+{template, "project/appskel_sup.erl",    "{{projectid}}/apps/{{projectid}}/src/{{projectid}}_sup.erl"}.
+{template, "project/appskel_serv.erl", "{{projectid}}/apps/{{projectid}}/src/{{projectid}}_serv.erl"}.
+
+{template, "project/vm.args",           "{{projectid}}/rel/files/vm.args"}.
+{template, "project/reltool.config",    "{{projectid}}/rel/reltool.config"}.
+{template, "project/app.config",        "{{projectid}}/rel/files/app.config"}.
+
+{file,     "project/erl.script",        "{{projectid}}/rel/files/erl"}.
+{chmod,    8#744,                       "{{projectid}}/rel/files/erl"}.
+{file,     "project/nodetool",          "{{projectid}}/rel/files/nodetool"}.
+{chmod,    8#744,                       "{{projectid}}/rel/files/nodetool"}.
+{file,     "project/runner",            "{{projectid}}/rel/files/{{projectid}}"}.
+{chmod,    8#744,                       "{{projectid}}/rel/files/{{projectid}}"}.
