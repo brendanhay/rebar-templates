@@ -2,7 +2,7 @@
 # Targets
 #
 
-REBAR=./rebar
+REBAR=`which rebar`
 
 .PHONY: build
 
