@@ -6,7 +6,9 @@
         kernel,
         stdlib
     ]},
-    {mod, {{{projectid}}, []}},
+    {mod, {
+     {{projectid}}, []}
+    },
     {env, [
     ]}
 ]}.

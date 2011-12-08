@@ -26,4 +26,5 @@ start_link() ->
 init([]) ->
     Children = [{{{projectid}}_serv, {{{projectid}}_serv, start_link, []},
                  permanent, 6000, worker, [{{projectid}}_serv]}],
-    {ok, {{one_for_all, 3, 20}, Children}}.
+    Options = {one_for_all, 3, 20},
+    {ok, {Options, Children}}.
