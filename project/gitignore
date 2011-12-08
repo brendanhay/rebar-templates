@@ -7,7 +7,6 @@
 
 # Directories
 deps
-priv
 bin
 ebin
 log
