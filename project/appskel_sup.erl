@@ -8,6 +8,8 @@
 %% Callbacks
 -export([init/1]).
 
+-include("include/{{projectid}}.hrl").
+
 %%
 %% API
 %%
