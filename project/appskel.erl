@@ -17,7 +17,7 @@
 %%
 
 -spec start() -> ok.
-start() -> start(?MODULE),
+start() -> start(?MODULE).
 
 -spec stop() -> ok.
 stop() ->

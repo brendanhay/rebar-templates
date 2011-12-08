@@ -24,7 +24,7 @@ start_link() ->
 
 -spec init([]) -> supervisor().
 init([]) ->
-    Children = [{{{projectid}}_serv, {{{projectid}}_serv, start_link, []},
-                 permanent, 6000, worker, [{{projectid}}_serv]}],
+    Mod = {{projectid}}_serv,
+    Spec = {Mod, {Mod, start_link, []}, permanent, 6000, worker, [Mod]},
     Options = {one_for_all, 3, 20},
-    {ok, {Options, Children}}.
+    {ok, {Options, [Spec]}}.
